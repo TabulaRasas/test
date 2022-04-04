@@ -20,6 +20,8 @@ var Positioner = require('electron-positioner')
 let user = null;
 let einsender = [];
 
+let test;
+
 if(process.defaultApp){
     if(process.argv.length >= 2) {
       app.setAsDefaultProtocolClient("connector", process.execPath, [path.resolve(process.argv[1])])
