@@ -16,11 +16,7 @@ let isQuiting = false;
 let printers = null;
 let tray = null;
 let store = new Store();
-var Positioner = require('electron-positioner')
-let user = null;
-let einsender = [];
 
-let test;
 
 if(process.defaultApp){
     if(process.argv.length >= 2) {
