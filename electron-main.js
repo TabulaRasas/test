@@ -41,8 +41,8 @@ if(process.defaultApp){
     //   console.log("cmd", cmd)
       let actualCommands = "";
       if(cmd) {
-        actualCommands = cmd.replace('connector://', '')
-        actualCommands = compact(actualCommands.split('&'))
+        // actualCommands = cmd.replace('connector://', '')
+        actualCommands = null;
       }
       console.log(actualCommands);
       let filesToPrint = actualCommands[1].replace(/_/g, " ").split(" ")
