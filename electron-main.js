@@ -16,7 +16,7 @@ let isQuiting = false;
 let printers = null;
 let tray = null;
 let store = new Store();
-
+let einsender;
 
 if(process.defaultApp){
     if(process.argv.length >= 2) {
@@ -38,10 +38,8 @@ if(process.defaultApp){
       const cmd = find(argv, cmd => {
         return cmd.indexOf('connector://') > -1
       })
-    //   console.log("cmd", cmd)
       let actualCommands = "";
       if(cmd) {
-        // actualCommands = cmd.replace('connector://', '')
         actualCommands = null;
       }
       console.log(actualCommands);
