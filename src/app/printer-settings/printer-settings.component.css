@@ -1,0 +1,31 @@
+form > div {
+    margin-bottom: 1rem;
+  }
+
+  .header {
+    background-color: rgb(177,21,86);
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+  }
+
+  .printer-settings{
+    border: 0.5px solid lightgrey;
+    border-top: none;
+    border-bottom: none;
+    padding: 1rem;
+  }
+  label {
+    display: block;
+  }
+
+  .selection {
+    display: block;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+  }
+
+  #device {
+    text-align: center;
+  }

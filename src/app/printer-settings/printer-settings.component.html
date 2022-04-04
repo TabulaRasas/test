@@ -1,0 +1,62 @@
+
+<div class="container-fluid p-0">
+    <div class="header">Druckereinstellungen</div>
+    <div id="device"></div>
+    <div class="printer-settings">
+    <!-- <div id="printers"></div> -->
+        <form id="printer-settings-form" [formGroup]="form">
+        <div class="form-group">
+            <label for="laborauftrag">Laborauftrag A5</label>
+            <span class="selection">
+            Drucker <select class="form-control" formControlName="laborDrucker">
+                <option *ngFor="let printer of existingPrinters" [value]="printer.name">{{printer.name}}</option>
+            </select>
+            Schacht <select class="form-control"  formControlName="laborSchacht" ></select>
+            </span>
+        </div>
+        <div class="form-group">
+        <label for="eve">EVE A5</label>
+        <span class="selection">
+            Drucker <select class="form-control"  formControlName="eveDrucker" >
+                <option *ngFor="let printer of existingPrinters" [value]="printer.name">{{printer.name}}</option>
+            </select>
+            Schacht <select class="form-control" formControlName="eveSchacht" ></select>
+            </span>
+        </div>
+
+        <div class="form-group">
+        <label for="bestellung">Bestellung A4</label>
+        <span class="selection">
+            Drucker <select class="form-control"  formControlName="bestellungDrucker"  >
+                <option *ngFor="let printer of existingPrinters" [value]="printer.name">{{printer.name}}</option>
+
+            </select>
+            Schacht <select class="form-control" formControlName="bestellungSchacht"></select>
+            </span>
+        </div>
+
+        <div class="form-group">
+        <label for="bestellung">Mutterpass A4</label>
+        <span class="selection">
+            Drucker <select class="form-control" formControlName="mutterpassDrucker" >
+                <option *ngFor="let printer of existingPrinters" [value]="printer.name">{{printer.name}}</option>
+
+            </select>
+            Schacht <select class="form-control" formControlName="mutterpassSchacht" ></select>
+            </span>
+        </div>
+
+        <div class="form-group">
+        <label for="bestellung">Etikettendrucker</label>
+        <span class="selection">
+            Drucker <select class="form-control" formControlName="etikettenDrucker">
+                <option *ngFor="let printer of existingPrinters" [value]="printer.name">{{printer.name}}</option>
+            </select>
+            Schacht <select class="form-control" formControlName="etikettenSchacht"></select>
+            </span>
+        </div>
+        <div class="btn btn-primary" id="submit-printer-settings" (click)="savePrinterSettings()">Speichern</div>
+        </form>
+    
+    </div>
+</div>

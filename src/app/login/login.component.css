@@ -1,0 +1,35 @@
+#login .container #login-row #login-column #login-box {
+    /* margin-top: 120px; */
+    max-width: 100vw;
+    min-height: 280px; 
+    max-height: 100vh;
+    min-width: 460px; 
+    background-color: #EAEAEA;
+  }
+  #login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+  }
+  #login .container #login-row #login-column #login-box #login-form #register-link {
+    margin-top: -85px;
+  }
+  .brand-image {
+    
+    margin-right: -0.8rem;
+    width: 66px;
+    height: 55px;
+}
+
+.mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: black !important;
+   }
+  
+   .mat-form-field-underline {
+    /*change color of underline*/
+    background-color: black !important;
+  } 
+  
+  .mat-form-field-ripple {
+   /*change color of underline when focused*/
+   background-color: black !important;;
+  }
